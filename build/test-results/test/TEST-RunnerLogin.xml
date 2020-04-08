@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RunnerLogin" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-4KDK87F" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+?[31mFailed scenarios:?[0m
+?[31msrc/main/resources/Features/login.feature:18 ?[0m# Inicio de sesion
+
+1 Scenarios (?[31m1 failed?[0m)
+10 Steps (?[31m1 failed?[0m, ?[36m8 skipped?[0m, ?[32m1 passed?[0m)
+0m43,759s
+
+org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
+  (Session info: chrome=81.0.4044.92)
+Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
+System info: host: 'DESKTOP-4KDK87F', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\tron\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57661}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6313b64d18b094ae8f973f0cde777a79
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:316)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy29.click(Unknown Source)
+	at Pages.loginPage.clickButtonUser(loginPage.java:50)
+	at Business.loginController.userButton(loginController.java:25)
+	at loginStep.doyClicALaOpcionDePerfilUsuario(loginStep.java:41)
+	at ?.Doy clic a la opcion de perfil usuario(src/main/resources/Features/login.feature:19)
+
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
